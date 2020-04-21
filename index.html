@@ -23,7 +23,7 @@ var context = myCanvas.getContext('2d');
 myCanvas.width= myCanvas.scrollWidth;
 myCanvas.height=myCanvas.scrollHeight;
 
-//badan1
+//bagian badan1
 context.fillStyle='olivedrab';
 context.fillRect(70,180,150,210); 
 context.strokeStyle="hitam";
@@ -36,21 +36,21 @@ context.fillText('and', 125, 275)
 context.fillText('Clean', 115, 300)
 
 
-//tutup1
+//bagian tutup1
 context.fillStyle='olivedrab';
 context.fillRect(70,149,150,32); 
 context.strokeStyle="#000000";
 context.lineWidth=1;
 context.strokeRect(70,149,150,32);
 
-// pegangan1 
+//bagian pegangan1 
 context.fillStyle='seagreen';
 context.fillRect(133,124,25,24); 
 context.strokeStyle="#000000";
 context.lineWidth=0.8;
 context.strokeRect(133,125,25,24);
 
-//badan2
+//bagian badan2
 context.fillStyle='olivedrab';
 context.fillRect(280,180,150,210);
 context.strokeStyle="hitam";
@@ -62,7 +62,7 @@ context.fillText('Green', 320, 250)
 context.fillText('and', 330, 275)
 context.fillText('Clean', 320, 300)
 
-//tutup2
+//bagian tutup2
 context.fillStyle='olivedrab';
 context.translate(147,-192);
 context.rotate(60 * Math.PI/360);
@@ -71,12 +71,42 @@ context.strokeStyle="#000000";
 context.lineWidth=1;
 context.strokeRect(280,149,150,32);
 
-// pegangan2
+//bagian pegangan2
 context.fillStyle='seagreen';
 context.fillRect(340,124,25,24); 
 context.strokeStyle="#000000";
 context.lineWidth=1;
 context.strokeRect(340,125,25,24);
+        
+//bagian badan3
+context.fillStyle='olivedrab';
+context.translate(10,217);
+context.rotate(-60 * Math.PI/360);
+context.fillRect(440,180,150,210); 
+context.strokeStyle="hitam";
+context.lineWidth=1.5;
+context.strokeRect(440,180,150,210);
+context.font = 'bold 20pt simsun';
+context.fillStyle = 'white'
+context.fillText('Green', 480, 260)
+context.fillText('&', 505, 290)
+context.fillText('Clean', 480, 320)
+
+//bagian tutup3
+context.fillStyle='olivedrab';
+context.translate(740,-410);
+context.rotate(180 * Math.PI/360);
+context.fillRect(440,149,150,32); 
+context.strokeStyle="#000000";
+context.lineWidth=1;
+context.strokeRect(440,149,150,32);
+
+//bagian pegangan3 
+context.fillStyle='seagreen';
+context.fillRect(500,124,25,24); 
+context.strokeStyle="#000000";
+context.lineWidth=0.8;
+context.strokeRect(500,125,25,24);
 
 
     </script>
