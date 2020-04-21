@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas {
+            border: 1px solid;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"> Browser tidak support tag canvas</canvas>
+   
+
+    <script>
+        var myCanvas = document.getElementById('myCanvas');
+var context = myCanvas.getContext('2d');
+myCanvas.width= myCanvas.scrollWidth;
+myCanvas.height=myCanvas.scrollHeight;
+
+//badan1
+context.fillStyle='olivedrab';
+context.fillRect(70,180,150,210); 
+context.strokeStyle="hitam";
+context.lineWidth=1.5;
+context.strokeRect(70,180,150,210);
+
+//tutup1
+context.fillStyle='olivedrab';
+context.fillRect(70,149,150,32); 
+context.strokeStyle="#000000";
+context.lineWidth=1;
+context.strokeRect(70,149,150,32);
+
+// pegangan1 
+context.fillStyle='seagreen';
+context.fillRect(133,124,25,24); 
+context.strokeStyle="#000000";
+context.lineWidth=0.8;
+context.strokeRect(133,125,25,24);
+
+
+    </script>
+</body>
+
+
+</html>
